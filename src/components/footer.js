@@ -6,12 +6,15 @@ import './header.css'
 const Footer = () => (
   <footer className="relative">
     <div className="relative bg-green-700 text-white w-screen" style={{marginTop: 50}}>
-      <div className="container mx-auto">
-        <div className="flex flex-row pb-12">
-          <div className="relative bg-green-900 rounded-lg p-4" style={{top: -30, maxHeight: 300}}>
+      <div className="container mx-auto overflow-x-hidden overflow-y-visible">
+        <div className="flex flex-col sm:flex-row pb-12">
+          <div
+            className="relative bg-green-900 rounded-lg p-4 m-2"
+            style={{top: -30, maxHeight: 300}}
+          >
             <Logo />
           </div>
-          <div className="my-8 ml-16 flex-grow">
+          <div className="my-8 ml-4 md:ml-16 flex-grow">
             <h3 className="text-2xl mb-2">About Us</h3>
             <ul>
               <li>What We Do</li>

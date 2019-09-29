@@ -22,9 +22,9 @@ const IndexPage = () => (
           src={require('../images/liberty.jpg')}
         />
       </picture>
-      <div className="absolute inset-x-0" style={{top: 150}}>
+      <div className="absolute inset-x-0" style={{top: 170}}>
         <div className="container mx-auto text-white">
-          <h1 className="md:text-6xl text-4xl text-shadow-subtle">
+          <h1 className="md:text-6xl text-4xl text-shadow-subtle mx-2">
             Helping Refugees <br />
             and Immigrants <span className="font-bold">Thrive</span>
           </h1>
