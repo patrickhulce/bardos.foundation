@@ -38,7 +38,7 @@ const IndexPage = () => (
           />
           <div className="absolute bg-green-700 opacity-75 inset-0"></div>
           <div className="absolute text-white text-shadow-subtle inset-0 flex flex-row items-center justify-center">
-            <h3 className="text-xl">Scholarships</h3>
+            <h3 className="text-xl">Student Scholarships</h3>
           </div>
         </div>
         <div className="w-1/2 h-64 relative">
@@ -48,17 +48,63 @@ const IndexPage = () => (
           />
           <div className="absolute bg-green-500 opacity-75 inset-0"></div>
           <div className="absolute text-white text-shadow-subtle inset-0 flex flex-row items-center justify-center">
-            <h3 className="text-xl">Non-profit Assistance</h3>
+            <h3 className="text-xl">Teacher Grants</h3>
           </div>
         </div>
       </div>
-      <h1>Hi people</h1>
-      <p>Welcome to your new Gatsby site.</p>
-      <p>Now go build something great.</p>
-      <div style={{maxWidth: `300px`, marginBottom: `1.45rem`}}>
-        <Image />
+      <div className="container mx-auto py-24 flex flex-col sm:flex-row items-center">
+        <div className="sm:w-1/2 px-8 mb-8">
+          <h2 className="text-4xl mb-2">What We Do</h2>
+          <p>
+            The Bardos Foundation provides support to refugees, first-generation, and
+            second-generation immigrants through educational grants and assistance to other
+            nonprofits with similar goals. This support includes the award of annual scholarships,
+            educational grants to teachers, donations to organizations such as the International
+            Rescue Committee, and direct services to other local nonprofits.
+          </p>
+        </div>
+        <div className="sm:w-1/2 px-8">
+          <div className="bg-white rounded p-6 w-full flex flex-row overflow-hidden mb-8">
+            <img
+              className="w-24 h-24 object-cover rounded"
+              src={require('../images/student-books.jpg')}
+            />
+            <div className="ml-4">
+              <h3 className="text-xl">Scholarships</h3>
+              <p className="text-sm h-16 overflow-hidden">
+                The Bardos Foundation awards two annual scholarships: the Denes I. Bardos and Agota
+                M. Bardos Scholarships.
+              </p>
+            </div>
+          </div>
+          <div className="bg-white rounded p-6 w-full flex flex-row overflow-hidden mb-8">
+            <img
+              className="w-24 h-24 object-cover rounded"
+              src={require('../images/classroom.jpg')}
+            />
+            <div className="ml-4">
+              <h3 className="text-xl">Teacher Grants</h3>
+              <p className="text-sm h-16 overflow-hidden">
+                Teachers in schools with high immigrant populations can apply for grants to cover
+                the cost of supplies.
+              </p>
+            </div>
+          </div>
+          <div className="bg-white rounded p-6 w-full flex flex-row overflow-hidden mb-8">
+            <img
+              className="w-24 h-24 object-cover rounded"
+              src={require('../images/citizenship.jpg')}
+            />
+            <div className="ml-4">
+              <h3 className="text-xl">Nonprofit Assistance</h3>
+              <p className="text-sm h-16 overflow-hidden">
+                The Bardos Foundation also donates to related organizations and provides support in
+                the form of direct services.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-      <Link to="/page-2/">Go to page 2</Link>
     </div>
   </Layout>
 )
