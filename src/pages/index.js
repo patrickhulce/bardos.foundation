@@ -26,7 +26,7 @@ const IndexPage = () => (
         <div className="container mx-auto text-white">
           <h1 className="md:text-6xl text-4xl text-shadow-subtle">
             Helping Refugees <br />
-            and Immigrants <span className="font-bold text-green-300">Thrive</span>
+            and Immigrants <span className="font-bold">Thrive</span>
           </h1>
         </div>
       </div>
