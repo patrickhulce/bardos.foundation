@@ -3,6 +3,7 @@ import {Link} from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import {ParallaxImage, PageSection, ImageCard} from '../components/page-components'
 
 import './home.css'
 
@@ -10,20 +11,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <div>
-      <div className="relative">
-        <div id="parallax-bg" className="absolute inset-0 z-1"></div>
-        <picture className="max-h-screen w-screen object-cover z-background">
-          <source
-            className="max-h-screen w-screen object-cover"
-            srcSet={require('../images/liberty-portrait.jpg')}
-            media="(max-width: 600px)"
-          />
-          <img
-            className="max-h-screen w-screen object-cover"
-            src={require('../images/liberty.jpg')}
-          />
-        </picture>
-      </div>
+      <ParallaxImage className="max-h-screen" />
       <div className="absolute inset-x-0 z-10" style={{top: 170}}>
         <div className="container mx-auto text-white">
           <h1 className="md:text-6xl text-4xl text-shadow-subtle mx-2">
@@ -58,77 +46,41 @@ const IndexPage = () => (
           </div>
         </Link>
       </div>
-      <div className="container mx-auto sm:py-24 py-12 flex flex-col sm:flex-row items-center">
-        <div className="sm:w-1/2 px-8 mb-8">
-          <h2 className="text-4xl mb-2">What We Do</h2>
-          <p>
-            The Bardos Foundation provides support to refugees, first-generation, and
-            second-generation immigrants through educational grants and assistance to other
-            nonprofits with similar goals. This support includes the award of annual scholarships,
-            educational grants to teachers, donations to organizations such as the International
-            Rescue Committee, and direct services to other local nonprofits.
-          </p>
-        </div>
-        <div className="sm:w-1/2 px-8">
-          <div className="bg-white rounded p-6 w-full flex flex-row items-center overflow-hidden mb-8">
-            <img
-              className="w-24 h-24 object-cover rounded"
-              src={require('../images/student-books.jpg')}
+      <PageSection
+        left={
+          <>
+            <h2 className="text-4xl mb-2">What We Do</h2>
+            <p>
+              The Bardos Foundation provides support to refugees, first-generation, and
+              second-generation immigrants through educational grants and assistance to other
+              nonprofits with similar goals. This support includes the award of annual scholarships,
+              educational grants to teachers, donations to organizations such as the International
+              Rescue Committee, and direct services to other local nonprofits.
+            </p>
+          </>
+        }
+        right={
+          <>
+            <ImageCard
+              image={require('../images/student-books.jpg')}
+              title="Scholarships"
+              text="The Bardos Foundation awards two annual scholarships: the Denes I. Bardos and Agota M. Bardos Scholarships."
             />
-            <div className="ml-4">
-              <h3 className="text-xl">Scholarships</h3>
-              <p className="text-sm overflow-hidden" style={{maxHeight: '4rem'}}>
-                The Bardos Foundation awards two annual scholarships: the Denes I. Bardos and Agota
-                M. Bardos Scholarships.
-              </p>
-            </div>
-          </div>
-          <div className="bg-white rounded p-6 w-full flex flex-row items-center overflow-hidden mb-8">
-            <img
-              className="w-24 h-24 object-cover rounded"
-              src={require('../images/classroom.jpg')}
+            <ImageCard
+              image={require('../images/classroom.jpg')}
+              title="Teacher Grants"
+              text="Teachers in schools with high immigrant populations can apply for grants to cover the cost of supplies."
             />
-            <div className="ml-4">
-              <h3 className="text-xl">Teacher Grants</h3>
-              <p className="text-sm overflow-hidden" style={{maxHeight: '4rem'}}>
-                Teachers in schools with high immigrant populations can apply for grants to cover
-                the cost of supplies.
-              </p>
-            </div>
-          </div>
-          <div className="bg-white rounded p-6 w-full flex flex-row items-center overflow-hidden mb-8">
-            <img
-              className="w-24 h-24 object-cover rounded"
-              src={require('../images/citizenship.jpg')}
+            <ImageCard
+              image={require('../images/citizenship.jpg')}
+              title="Nonprofit Assistance"
+              text="The Bardos Foundation also donates to related organizations and provides support in the form of direct services."
             />
-            <div className="ml-4">
-              <h3 className="text-xl">Nonprofit Assistance</h3>
-              <p className="text-sm overflow-hidden" style={{maxHeight: '4rem'}}>
-                The Bardos Foundation also donates to related organizations and provides support in
-                the form of direct services.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+          </>
+        }
+      />
     </div>
   </Layout>
 )
 
 export default IndexPage
-
-if (typeof window !== 'undefined') {
-  if (!window.installedParallax) {
-    window.installedParallax = true
-
-    document.addEventListener(
-      'scroll',
-      () => {
-        document.getElementById('parallax-bg').style.backgroundPositionY = `-${(3 *
-          window.pageYOffset) /
-          4}px`
-      },
-      {passive: true},
-    )
-  }
-}
