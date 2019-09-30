@@ -4,8 +4,8 @@ import {Logo} from './logo'
 import './header.css'
 
 const Header = () => (
-  <header className="relative">
-    <div className="absolute top-0 inset-x-0">
+  <header className="relative z-10">
+    <div className="absolute top-0 inset-x-0 ">
       <div className="inset-x-0" style={{background: 'rgba(255, 255, 255, 0.3)'}}>
         <div className="container mx-auto flex flex-row items-center justify-end py-2">
           <Link to="/" className="text-white mx-2 my-4" style={{marginRight: 'auto'}}>

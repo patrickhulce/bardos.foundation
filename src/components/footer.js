@@ -41,7 +41,7 @@ const Footer = () => (
         </div>
       </div>
     </div>
-    <div className="container mx-auto flex flex-row items-center my-4">
+    <div className="container mx-auto flex flex-row items-center my-4 px-2">
       <span>© {new Date().getFullYear()} Bardos Foundation</span>
     </div>
   </footer>

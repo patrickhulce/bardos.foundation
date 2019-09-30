@@ -1,0 +1,13 @@
+#parallax-bg {
+  background-image: url('../images/liberty.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+@media (max-width: 700px) {
+  #parallax-bg {
+    background-image: url('../images/liberty-portrait.jpg');
+  }
+}
