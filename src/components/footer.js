@@ -29,16 +29,19 @@ const Footer = () => (
             </ul>
           </div>
           <div className="my-8 ml-4 flex-grow">
-            <h3 className="text-2xl mb-2">Scholarships</h3>
+            <h3 className="text-2xl mb-2">Programs</h3>
             <ul>
               <li>
-                <Link to="/">Application</Link>
+                <Link to="/">Apply Now</Link>
               </li>
               <li>
-                <Link to="/scholarships">Agota M. Bardos</Link>
+                <Link to="/programs#scholarships">Scholarships</Link>
               </li>
               <li>
-                <Link to="/scholarships">Denes I. Bardos</Link>
+                <Link to="/programs#grants">Teacher Grants</Link>
+              </li>
+              <li>
+                <Link to="/programs#nonprofits">Nonprofit Assistance</Link>
               </li>
             </ul>
           </div>

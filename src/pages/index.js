@@ -21,7 +21,7 @@ const IndexPage = () => (
         </div>
       </div>
       <div className="flex flex-row text-center">
-        <Link className="w-1/2" to="/scholarships">
+        <Link className="w-1/2" to="/programs#scholarships">
           <div className="h-64 relative">
             <img
               className="w-full h-full object-cover z-background"
@@ -33,7 +33,7 @@ const IndexPage = () => (
             </div>
           </div>
         </Link>
-        <Link className="w-1/2" to="/grants">
+        <Link className="w-1/2" to="/programs#grants">
           <div className="h-64 relative">
             <img
               className="w-full h-full object-cover z-background"

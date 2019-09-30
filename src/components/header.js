@@ -42,8 +42,8 @@ const Header = () => (
           >
             Who We Are
           </Link>
-          <Link to="/scholarships" className="px-2 hover:text-green-300 truncate">
-            Scholarships
+          <Link to="/programs" className="px-2 hover:text-green-300 truncate">
+            Programs
           </Link>
         </div>
       </div>
