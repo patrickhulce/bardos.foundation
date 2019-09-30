@@ -2,7 +2,6 @@ import React from 'react'
 import {Link} from 'gatsby'
 
 import Layout from '../components/layout'
-import Image from '../components/image'
 import SEO from '../components/seo'
 
 import './home.css'
@@ -28,32 +27,36 @@ const IndexPage = () => (
       <div className="absolute inset-x-0 z-10" style={{top: 170}}>
         <div className="container mx-auto text-white">
           <h1 className="md:text-6xl text-4xl text-shadow-subtle mx-2">
-            Helping Refugees <br />
-            and Immigrants <span className="font-bold">Thrive</span>
+            Helping Migrants <br />
+            <span className="font-bold">Thrive</span>
           </h1>
         </div>
       </div>
       <div className="flex flex-row text-center">
-        <div className="w-1/2 h-64 relative">
-          <img
-            className="w-full h-full object-cover z-background"
-            src={require('../images/student-books.jpg')}
-          />
-          <div className="absolute bg-green-700 opacity-75 inset-0"></div>
-          <div className="absolute text-white text-shadow-subtle inset-0 flex flex-row items-center justify-center">
-            <h3 className="text-xl md:text-3xl">Student Scholarships</h3>
+        <Link className="w-1/2" to="/scholarships">
+          <div className="h-64 relative">
+            <img
+              className="w-full h-full object-cover z-background"
+              src={require('../images/student-books.jpg')}
+            />
+            <div className="absolute bg-green-700 opacity-75 inset-0"></div>
+            <div className="absolute text-white text-shadow-subtle inset-0 flex flex-row items-center justify-center">
+              <h3 className="text-xl md:text-3xl">Student Scholarships</h3>
+            </div>
           </div>
-        </div>
-        <div className="w-1/2 h-64 relative">
-          <img
-            className="w-full h-full object-cover z-background"
-            src={require('../images/classroom.jpg')}
-          />
-          <div className="absolute bg-green-500 opacity-75 inset-0"></div>
-          <div className="absolute text-white text-shadow-subtle inset-0 flex flex-row items-center justify-center">
-            <h3 className="text-xl md:text-3xl">Teacher Grants</h3>
+        </Link>
+        <Link className="w-1/2" to="/grants">
+          <div className="h-64 relative">
+            <img
+              className="w-full h-full object-cover z-background"
+              src={require('../images/classroom.jpg')}
+            />
+            <div className="absolute bg-green-500 opacity-75 inset-0"></div>
+            <div className="absolute text-white text-shadow-subtle inset-0 flex flex-row items-center justify-center">
+              <h3 className="text-xl md:text-3xl">Teacher Grants</h3>
+            </div>
           </div>
-        </div>
+        </Link>
       </div>
       <div className="container mx-auto sm:py-24 py-12 flex flex-col sm:flex-row items-center">
         <div className="sm:w-1/2 px-8 mb-8">

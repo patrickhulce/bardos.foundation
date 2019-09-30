@@ -17,25 +17,43 @@ const Footer = () => (
           <div className="my-8 ml-4 md:ml-16 flex-grow">
             <h3 className="text-2xl mb-2">About Us</h3>
             <ul>
-              <li>What We Do</li>
-              <li>Who We Are</li>
-              <li>Privacy Policy</li>
+              <li>
+                <Link to="/">What We Do</Link>
+              </li>
+              <li>
+                <Link to="/about">Who We Are</Link>
+              </li>
+              <li>
+                <Link to="/privacy-policy">Privacy Policy</Link>
+              </li>
             </ul>
           </div>
           <div className="my-8 ml-4 flex-grow">
             <h3 className="text-2xl mb-2">Scholarships</h3>
             <ul>
-              <li>Application</li>
-              <li>Agota M. Bardos</li>
-              <li>Denes I. Bardos</li>
+              <li>
+                <Link to="/">Application</Link>
+              </li>
+              <li>
+                <Link to="/scholarships">Agota M. Bardos</Link>
+              </li>
+              <li>
+                <Link to="/scholarships">Denes I. Bardos</Link>
+              </li>
             </ul>
           </div>
           <div className="my-8 ml-4 flex-grow">
             <h3 className="text-2xl mb-2">Governance</h3>
             <ul>
-              <li>501(c)(3) Exemption</li>
-              <li>Texas Exemption</li>
-              <li>Bylaws</li>
+              <li>
+                <Link to="/">501(c)(3) Exemption</Link>
+              </li>
+              <li>
+                <Link to="/">Texas Exemption</Link>
+              </li>
+              <li>
+                <Link to="/">Bylaws</Link>
+              </li>
             </ul>
           </div>
         </div>

@@ -12,7 +12,7 @@ const Header = () => (
             <Logo />
           </Link>
           <a
-            to="/apply"
+            to="mailto:contact@bardos.foundation"
             className="hidden sm:inline hover:text-blue-500 text-blue-700 font-bold py-2 px-4 cursor-pointer"
           >
             contact@bardos.foundation
