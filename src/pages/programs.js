@@ -23,11 +23,12 @@ const ProgramsPage = () => (
         <>
           <h2 className="text-4xl mb-2">Scholarships</h2>
           <p>
-            The Bardos Foundation provides support to refugees, first-generation, and
-            second-generation immigrants through educational grants and assistance to other
-            nonprofits with similar goals. This support includes the award of annual scholarships,
-            educational grants to teachers, donations to organizations such as the International
-            Rescue Committee, and direct services to other local nonprofits.
+            The Bardos Foundation awards multiple scholarships annually to first-generation and
+            second-generation immigrants enrolling in a four-year degree program in the United
+            States. Winners demonstrate their academic achievement, financial need, and outstanding
+            community or family involvement. There are two named scholarships: the Denes I. Bardos
+            scholarship for science and engineering and the Agota M. Bardos scholarship for the
+            arts.
           </p>
         </>
       }
@@ -66,11 +67,9 @@ const ProgramsPage = () => (
         <>
           <h2 className="text-4xl mb-2">Teacher Grants</h2>
           <p>
-            The Bardos Foundation provides support to refugees, first-generation, and
-            second-generation immigrants through educational grants and assistance to other
-            nonprofits with similar goals. This support includes the award of annual scholarships,
-            educational grants to teachers, donations to organizations such as the International
-            Rescue Committee, and direct services to other local nonprofits.
+            The Bardos Foundation directly supports teachers in schools with high immigrant
+            populations. Teachers can apply for grants for ordinary classroom supplies and community
+            projects.
           </p>
         </>
       }
@@ -81,11 +80,9 @@ const ProgramsPage = () => (
         <>
           <h2 className="text-4xl mb-2">Nonprofit Assistance</h2>
           <p>
-            The Bardos Foundation provides support to refugees, first-generation, and
-            second-generation immigrants through educational grants and assistance to other
-            nonprofits with similar goals. This support includes the award of annual scholarships,
-            educational grants to teachers, donations to organizations such as the International
-            Rescue Committee, and direct services to other local nonprofits.
+            Our resources alone are not enough, so we work with other nonprofits to aid in our
+            shared mission. The Bardos Foundation provides direct donations and services in our
+            members area of expertise to other nonprofits with similar missions.
           </p>
         </>
       }
