@@ -15,7 +15,7 @@ const IndexPage = () => (
       <div className="absolute inset-x-0 z-10" style={{top: 170}}>
         <div className="container mx-auto text-white">
           <h1 className="md:text-6xl text-4xl text-shadow-subtle mx-2">
-            We Help Migrants <br />
+            We Help Immigrants <br />
             <span className="font-bold">Thrive</span>
           </h1>
         </div>
