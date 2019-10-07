@@ -51,14 +51,14 @@ const ProgramsPage = () => (
       left={
         <>
           <ImageCard
-            image={require('../images/student-books.jpg')}
+            image={require('../images/school-supplies.jpg')}
             title="Classroom Supplies"
             text="Use a grant from the Bardos Foundation to fund classroom supplies for your students."
           />
           <ImageCard
-            image={require('../images/student-books.jpg')}
-            title=""
-            text="The Agota M. Bardos scholarship is awarded to students intending to study the arts."
+            image={require('../images/community.jpg')}
+            title="Community Involvement"
+            text="Use grant funds to sponsor community projects and getting your students active!"
           />
         </>
       }
@@ -92,14 +92,14 @@ const ProgramsPage = () => (
       right={
         <>
           <ImageCard
-            image={require('../images/student-books.jpg')}
+            image={require('../images/donations.jpg')}
             title="Donations"
             text="The Bardos Foundation donates to organizations with similar goals."
           />
           <ImageCard
-            image={require('../images/student-books.jpg')}
+            image={require('../images/photography.jpg')}
             title="Photography"
-            text="Pro bono photography services are available to elligible nonprofits in certain markets."
+            text="Pro bono photography services are available to elligible nonprofits in certain markets to capture their work and promote their cause."
           />
         </>
       }
