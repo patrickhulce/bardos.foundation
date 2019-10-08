@@ -33,7 +33,7 @@ const AboutPage = () => (
       right={
         <>
           <ImageCard
-            image={require('../images/student-books.jpg')}
+            image={require('../images/denes-agota.jpg')}
             title="Denes & Agota Bardos"
             text="The Bardos Foundation awards two annual scholarships: the Denes I. Bardos and Agota M. Bardos Scholarships."
           />

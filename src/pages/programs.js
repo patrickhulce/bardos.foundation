@@ -35,12 +35,12 @@ const ProgramsPage = () => (
       right={
         <>
           <ImageCard
-            image={require('../images/student-books.jpg')}
+            image={require('../images/denes-portrait.jpg')}
             title="Denes I. Bardos"
             text="The Denes I. Bardos scholarship is awarded to students intending to study engineering or the natural sciences."
           />
           <ImageCard
-            image={require('../images/student-books.jpg')}
+            image={require('../images/agota-portrait.jpg')}
             title="Agota M. Bardos"
             text="The Agota M. Bardos scholarship is awarded to students intending to study the arts."
           />
