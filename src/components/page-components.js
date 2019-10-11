@@ -1,4 +1,5 @@
 import React from 'react'
+import Img from 'gatsby-image'
 
 export const ParallaxImage = ({className, maxHeight}) => {
   const classes = `${className} w-screen object-cover`
@@ -44,9 +45,15 @@ export const PageSection = ({id, left, right}) => {
 }
 
 export const ImageCard = ({image, title, text}) => {
+  const imageClasses = `w-24 h-24 object-cover rounded flex-shrink-0`
+
   return (
     <div className="bg-white rounded p-6 w-full flex flex-row items-center overflow-hidden mb-8">
-      <img className="w-24 h-24 object-cover rounded" src={image} />
+      {typeof image === 'string' ? (
+        <img className={imageClasses} src={image} />
+      ) : (
+        <Img className={imageClasses} fluid={image} />
+      )}
       <div className="ml-4">
         <h3 className="text-xl">{title}</h3>
         <p className="text-sm overflow-hidden" style={{maxHeight: '4rem'}}>

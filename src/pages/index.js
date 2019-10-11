@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'gatsby'
+import Img from 'gatsby-image'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -7,7 +8,33 @@ import {ParallaxImage, PageSection, ImageCard} from '../components/page-componen
 
 import './home.css'
 
-const IndexPage = () => (
+export const query = graphql`
+  query {
+    studentBooks: file(relativePath: {eq: "student-books.jpg"}) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    classroom: file(relativePath: {eq: "classroom.jpg"}) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    citizenship: file(relativePath: {eq: "citizenship.jpg"}) {
+      childImageSharp {
+        fluid(maxWidth: 200) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
+
+const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home" />
     <div>
@@ -23,9 +50,9 @@ const IndexPage = () => (
       <div className="flex flex-row text-center">
         <Link className="w-1/2" to="/programs#scholarships">
           <div className="h-64 relative">
-            <img
+            <Img
               className="w-full h-full object-cover z-background"
-              src={require('../images/student-books.jpg')}
+              fluid={data.studentBooks.childImageSharp.fluid}
             />
             <div className="absolute bg-green-700 opacity-75 inset-0"></div>
             <div className="absolute text-white text-shadow-subtle inset-0 flex flex-row items-center justify-center">
@@ -35,9 +62,9 @@ const IndexPage = () => (
         </Link>
         <Link className="w-1/2" to="/programs#grants">
           <div className="h-64 relative">
-            <img
+            <Img
               className="w-full h-full object-cover z-background"
-              src={require('../images/classroom.jpg')}
+              fluid={data.classroom.childImageSharp.fluid}
             />
             <div className="absolute bg-green-500 opacity-75 inset-0"></div>
             <div className="absolute text-white text-shadow-subtle inset-0 flex flex-row items-center justify-center">
@@ -62,17 +89,17 @@ const IndexPage = () => (
         right={
           <>
             <ImageCard
-              image={require('../images/student-books.jpg')}
+              image={data.studentBooks.childImageSharp.fluid}
               title="Scholarships"
               text="The Bardos Foundation awards two annual scholarships: the Denes I. Bardos and Agota M. Bardos Scholarships."
             />
             <ImageCard
-              image={require('../images/classroom.jpg')}
+              image={data.classroom.childImageSharp.fluid}
               title="Teacher Grants"
               text="Teachers in schools with high immigrant populations can apply for grants to cover the cost of supplies."
             />
             <ImageCard
-              image={require('../images/citizenship.jpg')}
+              image={data.citizenship.childImageSharp.fluid}
               title="Nonprofit Assistance"
               text="The Bardos Foundation also donates to related organizations and provides support in the form of direct services."
             />
