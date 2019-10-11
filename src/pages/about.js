@@ -26,7 +26,7 @@ export const query = graphql`
 const AboutPage = ({data}) => (
   <Layout>
     <SEO title="Who We Are" />
-    <ParallaxImage maxHeight={300} />
+    <ParallaxImage height={300} />
     <PageHeader text="Who We Are" />
     <HeaderBottomBorder />
     <PageSection

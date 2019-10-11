@@ -1,20 +1,20 @@
 import React from 'react'
 import Img from 'gatsby-image'
 
-export const ParallaxImage = ({className, maxHeight}) => {
+export const ParallaxImage = ({className, height}) => {
   const classes = `${className} w-screen object-cover`
 
   return (
     <div className="relative">
       <div id="parallax-bg" className="absolute inset-0 z-1"></div>
-      <picture className={`${classes} z-background`} style={{maxHeight}}>
+      <picture className={`${classes} z-background`} style={{height}}>
         <source
           className={classes}
           srcSet={require('../images/liberty-portrait.jpg')}
           media="(max-width: 600px)"
-          style={{maxHeight}}
+          style={{height}}
         />
-        <img className={classes} src={require('../images/liberty.jpg')} style={{maxHeight}} />
+        <img className={classes} src={require('../images/liberty.jpg')} style={{height}} />
       </picture>
     </div>
   )

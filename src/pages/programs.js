@@ -61,7 +61,7 @@ export const query = graphql`
 const ProgramsPage = ({data}) => (
   <Layout>
     <SEO title="Programs" />
-    <ParallaxImage maxHeight={300} />
+    <ParallaxImage height={300} />
     <PageHeader text="Programs" />
     <HeaderBottomBorder />
     <PageSection
