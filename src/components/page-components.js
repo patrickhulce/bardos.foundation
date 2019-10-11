@@ -45,7 +45,7 @@ export const PageSection = ({id, left, right}) => {
 }
 
 export const ImageCard = ({image, title, text}) => {
-  const imageClasses = `w-24 h-24 object-cover rounded flex-shrink-0`
+  const imageClasses = `w-24 h-24 object-cover rounded flex-shrink-0 flex-grow-0`
 
   return (
     <div className="bg-white rounded p-6 w-full flex flex-row items-center overflow-hidden mb-8">

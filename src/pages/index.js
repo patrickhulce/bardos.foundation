@@ -26,7 +26,7 @@ export const query = graphql`
     }
     citizenship: file(relativePath: {eq: "citizenship.jpg"}) {
       childImageSharp {
-        fluid(maxWidth: 200) {
+        fluid(maxWidth: 100, maxHeight: 100) {
           ...GatsbyImageSharpFluid
         }
       }

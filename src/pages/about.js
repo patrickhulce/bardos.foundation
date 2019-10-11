@@ -11,7 +11,19 @@ import {
   HeaderBottomBorder,
 } from '../components/page-components'
 
-const AboutPage = () => (
+export const query = graphql`
+  query {
+    denesAgota: file(relativePath: {eq: "denes-agota.jpg"}) {
+      childImageSharp {
+        fluid(maxWidth: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
+
+const AboutPage = ({data}) => (
   <Layout>
     <SEO title="Who We Are" />
     <ParallaxImage maxHeight={300} />
@@ -33,7 +45,7 @@ const AboutPage = () => (
       right={
         <>
           <ImageCard
-            image={require('../images/denes-agota.jpg')}
+            image={data.denesAgota.childImageSharp.fluid}
             title="Denes & Agota Bardos"
             text="The Bardos Foundation awards two annual scholarships: the Denes I. Bardos and Agota M. Bardos Scholarships."
           />

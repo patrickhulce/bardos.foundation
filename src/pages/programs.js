@@ -11,7 +11,54 @@ import {
   HeaderBottomBorder,
 } from '../components/page-components'
 
-const ProgramsPage = () => (
+export const query = graphql`
+  query {
+    schoolSupplies: file(relativePath: {eq: "school-supplies.jpg"}) {
+      childImageSharp {
+        fluid(maxWidth: 100, maxHeight: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    community: file(relativePath: {eq: "community.jpg"}) {
+      childImageSharp {
+        fluid(maxWidth: 100, maxHeight: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    donations: file(relativePath: {eq: "donations.jpg"}) {
+      childImageSharp {
+        fluid(maxWidth: 100, maxHeight: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    photography: file(relativePath: {eq: "photography.jpg"}) {
+      childImageSharp {
+        fluid(maxWidth: 100, maxHeight: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    denesPortrait: file(relativePath: {eq: "denes-portrait.jpg"}) {
+      childImageSharp {
+        fluid(maxWidth: 100, maxHeight: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    agotaPortait: file(relativePath: {eq: "agota-portrait.jpg"}) {
+      childImageSharp {
+        fluid(maxWidth: 100, maxHeight: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
+
+const ProgramsPage = ({data}) => (
   <Layout>
     <SEO title="Programs" />
     <ParallaxImage maxHeight={300} />
@@ -35,12 +82,12 @@ const ProgramsPage = () => (
       right={
         <>
           <ImageCard
-            image={require('../images/denes-portrait.jpg')}
+            image={data.denesPortrait.childImageSharp.fluid}
             title="Denes I. Bardos"
             text="The Denes I. Bardos scholarship is awarded to students intending to study engineering or the natural sciences."
           />
           <ImageCard
-            image={require('../images/agota-portrait.jpg')}
+            image={data.agotaPortait.childImageSharp.fluid}
             title="Agota M. Bardos"
             text="The Agota M. Bardos scholarship is awarded to students intending to study the arts."
           />
@@ -52,12 +99,12 @@ const ProgramsPage = () => (
       left={
         <>
           <ImageCard
-            image={require('../images/school-supplies.jpg')}
+            image={data.schoolSupplies.childImageSharp.fluid}
             title="Classroom Supplies"
             text="Use a grant from the Bardos Foundation to fund classroom supplies for your students."
           />
           <ImageCard
-            image={require('../images/community.jpg')}
+            image={data.community.childImageSharp.fluid}
             title="Community Involvement"
             text="Use grant funds to sponsor community projects and getting your students active!"
           />
@@ -89,12 +136,12 @@ const ProgramsPage = () => (
       right={
         <>
           <ImageCard
-            image={require('../images/donations.jpg')}
+            image={data.donations.childImageSharp.fluid}
             title="Donations"
             text="The Bardos Foundation donates to organizations with similar goals."
           />
           <ImageCard
-            image={require('../images/photography.jpg')}
+            image={data.photography.childImageSharp.fluid}
             title="Photography"
             text="Pro bono photography services are available to elligible nonprofits in certain markets to capture their work and promote their cause."
           />
