@@ -55,6 +55,9 @@ const Footer = () => (
                 <Link to="/">Texas Exemption</Link>
               </li>
               <li>
+                <Link to="/privacy">Privacy</Link>
+              </li>
+              <li>
                 <Link to="/">Bylaws</Link>
               </li>
             </ul>

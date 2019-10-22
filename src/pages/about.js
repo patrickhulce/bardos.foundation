@@ -108,7 +108,6 @@ const AboutPage = ({data}) => (
       }
       right={
         <>
-          {' '}
           <h2 className="text-4xl mb-2">Agota Bardos</h2>
           <p>
             Agota (Agi) Bardos was a woman of active faith and fearless conviction. Bright,
