@@ -82,14 +82,16 @@ const ProgramsPage = ({data}) => (
       right={
         <>
           <ImageCard
-            image={data.denesPortrait.childImageSharp.fluid}
-            title="Denes I. Bardos"
-            text="The Denes I. Bardos scholarship is awarded to students intending to study engineering or the natural sciences."
+            image={data.agotaPortait.childImageSharp.fluid}
+            title="Agota M. Bardos Scholarship"
+            text="The Agota M. Bardos scholarship is awarded to students intending to study the arts."
+            link="/scholarship-agota"
           />
           <ImageCard
-            image={data.agotaPortait.childImageSharp.fluid}
-            title="Agota M. Bardos"
-            text="The Agota M. Bardos scholarship is awarded to students intending to study the arts."
+            image={data.denesPortrait.childImageSharp.fluid}
+            title="Denes I. Bardos Scholarship"
+            text="The Denes I. Bardos scholarship is awarded to students intending to study engineering or the natural sciences."
+            link="/scholarship-denes"
           />
         </>
       }

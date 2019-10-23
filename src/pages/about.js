@@ -98,53 +98,6 @@ const AboutPage = ({data}) => (
         </>
       }
     />
-    <PageSection
-      left={
-        <>
-          <div className="flex justify-center">
-            <Img className="w-64 rounded-full" fluid={data.agota.childImageSharp.fluid} />
-          </div>
-        </>
-      }
-      right={
-        <>
-          <h2 className="text-4xl mb-2">Agota Bardos</h2>
-          <p>
-            Agota (Agi) Bardos was a woman of active faith and fearless conviction. Bright,
-            disciplined, hardworking, organized, and outspoken, she always thought of others first.
-            Agi not only raised ten children but she also opened her heart and home to many who
-            needed it. A devout Catholic and a Secular Franciscan, she was a very nurturing, holy,
-            and loving example to everyone she encountered. Agi loved to garden, sew, paint, knit,
-            crochet, pray, sing, and play the piano. An excellent cook, and ahead of her time, she
-            must have made tens of thousands of healthy meals for her large family. She passed away
-            from cancer in January of 2007.
-          </p>
-        </>
-      }
-    />
-    <PageSection
-      left={
-        <>
-          <h2 className="text-4xl mb-2">Denes Bardos</h2>
-          <p>
-            Denes Bardos is man of brilliance and curiousity. Generous, funny, dutiful, empirical,
-            and rebellious, he has lived through the worst of situations, survived, and come out
-            beaming. A lifelong learner, Denes earned his PhD in metallurgy and had a successful
-            career in orthopedic implant research. As a Knight of the Order of Malta and a Knight of
-            the Holy Sepulcher, he often cooks for the homeless and would give you the shirt off his
-            back without a second thought. A gifted storytell, Denes continues to share his
-            harrowing and heartfelt experiences with his 31 grandchildren and 4 great-grandchildren.
-          </p>
-        </>
-      }
-      right={
-        <>
-          <div className="flex justify-center">
-            <Img className="w-64 rounded-full" fluid={data.denes.childImageSharp.fluid} />
-          </div>
-        </>
-      }
-    />
   </Layout>
 )
 

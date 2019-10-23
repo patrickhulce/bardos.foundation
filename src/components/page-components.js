@@ -44,7 +44,7 @@ export const PageSection = ({id, left, right}) => {
   )
 }
 
-export const ImageCard = ({image, title, text}) => {
+export const ImageCard = ({image, title, text, link}) => {
   const imageClasses = `w-24 h-24 object-cover rounded flex-shrink-0 flex-grow-0`
 
   return (
@@ -55,7 +55,7 @@ export const ImageCard = ({image, title, text}) => {
         <Img className={imageClasses} fluid={image} />
       )}
       <div className="ml-4">
-        <h3 className="text-xl">{title}</h3>
+        <h3 className="text-xl">{link ? <a href={link}>{title}</a> : title}</h3>
         <p className="text-sm overflow-hidden" style={{maxHeight: '4rem'}}>
           {text}
         </p>

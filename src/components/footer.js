@@ -24,7 +24,7 @@ const Footer = () => (
                 <Link to="/about">Who We Are</Link>
               </li>
               <li>
-                <Link to="/privacy-policy">Privacy Policy</Link>
+                <Link to="/privacy">Privacy Policy</Link>
               </li>
             </ul>
           </div>
@@ -55,10 +55,7 @@ const Footer = () => (
                 <Link to="/">Texas Exemption</Link>
               </li>
               <li>
-                <Link to="/privacy">Privacy</Link>
-              </li>
-              <li>
-                <Link to="/">Bylaws</Link>
+                <Link to="/">Records Request</Link>
               </li>
             </ul>
           </div>
@@ -66,7 +63,8 @@ const Footer = () => (
       </div>
     </div>
     <div className="container mx-auto flex flex-row items-center my-4 px-2">
-      <span>© {new Date().getFullYear()} Bardos Foundation</span>
+      <span style={{flexGrow: 1}}>© {new Date().getFullYear()} Bardos Foundation</span>
+      <span>All rights reserved.</span>
     </div>
   </footer>
 )
