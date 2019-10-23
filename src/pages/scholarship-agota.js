@@ -31,7 +31,7 @@ export const query = graphql`
   }
 `
 
-const AboutPage = ({data}) => (
+const AgotaPage = ({data}) => (
   <Layout>
     <SEO title="Agota M. Bardos Scholarship" />
     <ParallaxImage height={300} />
@@ -44,7 +44,7 @@ const AboutPage = ({data}) => (
           <p>
             The Agota M. Bardos Scholarship is awarded to students studying the arts. Finalists
             embody the life and values of Agota Bardos by demonstrating their commitment to visual
-            arts or music, academic achievement, and community service. As with all Bardos
+            arts or music, academic achievement, and community or family service. As with all Bardos
             Foundation grants, immigration history and financial need play a central role in awards.
           </p>
         </>
@@ -101,4 +101,4 @@ const AboutPage = ({data}) => (
   </Layout>
 )
 
-export default AboutPage
+export default AgotaPage

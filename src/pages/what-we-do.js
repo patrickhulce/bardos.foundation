@@ -131,7 +131,7 @@ const ProgramsPage = ({data}) => (
           <p>
             Our resources alone are not enough, so we work with other nonprofits to aid in our
             shared mission. The Bardos Foundation provides direct donations and services in our
-            members area of expertise to other nonprofits with similar missions.
+            members area of expertise to other nonprofits.
           </p>
         </>
       }

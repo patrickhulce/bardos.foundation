@@ -36,7 +36,7 @@ const DenesPage = ({data}) => (
           <p>
             The Denes I. Bardos Scholarship is awarded to students studying science or engineering.
             Finalists embody the life and values of Denes Bardos by demonstrating their commitment
-            to innovation, academic achievement, and community service. As with all Bardos
+            to innovation, academic achievement, and community or family service. As with all Bardos
             Foundation grants, immigration history and financial need play a central role in awards.
           </p>
         </>
