@@ -52,7 +52,7 @@ export const query = graphql`
   }
 `
 
-const AboutPage = ({data}) => (
+const WhoWeArePage = ({data}) => (
   <Layout>
     <SEO title="Who We Are" />
     <ParallaxImage height={300} />
@@ -65,8 +65,8 @@ const AboutPage = ({data}) => (
           <p>
             The Bardos Foundation is named in honor of Denes and Agota Bardos, two Hungarian
             refugees who escaped Soviet persecution to make a life together in America. The Bardos
-            Foundation embodies the values that made their success possible by providing aid to
-            refugees and immigrants searching for a better life.
+            Foundation uploads the values they reflected to everyone they touched by providing aid
+            to refugees and immigrants searching for a better life.
           </p>
           <p className="mt-2">
             Denes and Agota's descendants follow in their footsteps by managing the grant programs
@@ -101,4 +101,4 @@ const AboutPage = ({data}) => (
   </Layout>
 )
 
-export default AboutPage
+export default WhoWeArePage

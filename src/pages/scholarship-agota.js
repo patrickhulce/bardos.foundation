@@ -65,7 +65,7 @@ const AboutPage = ({data}) => (
 
             <Link
               to="/apply"
-              className="bg-blue-700 hover:text-blue-300 text-white font-bold py-2 px-4 mt-4 ml-2 rounded cursor-pointer"
+              className="bg-blue-700 hover:text-blue-300 text-white font-bold py-2 px-4 mt-6 ml-2 rounded cursor-pointer"
               style={{width: 'fit-content'}}
             >
               Apply Now

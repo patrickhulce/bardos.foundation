@@ -15,7 +15,7 @@ import {
 const SectionTitle = props => <div className="text-2xl">{props.children}.</div>
 const Paragraph = props => <div className="container md:mx-auto mx-4 my-4">{props.children}</div>
 
-const AboutPage = ({data}) => (
+const PrivacyPage = ({data}) => (
   <Layout>
     <SEO title="Privacy Policy" />
     <ParallaxImage height={300} />
@@ -140,4 +140,4 @@ const AboutPage = ({data}) => (
   </Layout>
 )
 
-export default AboutPage
+export default PrivacyPage

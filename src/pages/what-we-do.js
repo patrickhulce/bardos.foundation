@@ -60,9 +60,9 @@ export const query = graphql`
 
 const ProgramsPage = ({data}) => (
   <Layout>
-    <SEO title="Programs" />
+    <SEO title="What We Do" />
     <ParallaxImage height={300} />
-    <PageHeader text="Programs" />
+    <PageHeader text="What We Do" />
     <HeaderBottomBorder />
     <PageSection
       id="scholarships"
@@ -73,9 +73,9 @@ const ProgramsPage = ({data}) => (
             The Bardos Foundation awards multiple scholarships annually to first-generation and
             second-generation immigrants enrolling in a four-year degree program in the United
             States. Winners demonstrate their academic achievement, financial need, and outstanding
-            community or family involvement. There are two named scholarships: the Denes I. Bardos
-            scholarship for science and engineering and the Agota M. Bardos scholarship for the
-            arts.
+            community or family involvement. There are two named scholarships: the Agota M. Bardos
+            scholarship for the arts and the Denes I. Bardos scholarship for science and
+            engineering.
           </p>
         </>
       }

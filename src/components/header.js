@@ -29,21 +29,28 @@ const Header = () => (
       <div className="inset-x-0" style={{background: 'rgba(50, 135, 90, 0.8)'}}>
         <div className="container mx-auto flex flex-row text-white font-bold text-sm md:text-base uppercase rounded-lg py-4 font-montserrat">
           <Link
-            to="/"
+            to="/who-we-are"
+            className="px-2 border-r hover:text-green-300 truncate"
+            style={{borderColor: 'rgba(255, 255, 255, 0.3)'}}
+          >
+            Who We Are
+          </Link>
+          <Link
+            to="/what-we-do"
             className="px-2 border-r hover:text-green-300 truncate"
             style={{borderColor: 'rgba(255, 255, 255, 0.3)'}}
           >
             What We Do
           </Link>
           <Link
-            to="/about"
+            to="/scholarship-agota"
             className="px-2 border-r hover:text-green-300 truncate"
             style={{borderColor: 'rgba(255, 255, 255, 0.3)'}}
           >
-            Who We Are
+            Agota Scholarship
           </Link>
-          <Link to="/programs" className="px-2 hover:text-green-300 truncate">
-            Programs
+          <Link to="/scholarship-denes" className="px-2 hover:text-green-300 truncate">
+            Denes Scholarship
           </Link>
         </div>
       </div>

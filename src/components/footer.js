@@ -12,19 +12,27 @@ const Footer = () => (
             className="relative bg-green-900 rounded-lg p-4 m-2"
             style={{top: -30, maxHeight: 300}}
           >
-            <Logo />
+            <Link to="/">
+              <Logo />
+            </Link>
           </div>
           <div className="my-8 ml-4 md:ml-16 flex-grow">
             <h3 className="text-2xl mb-2">About Us</h3>
             <ul>
               <li>
-                <Link to="/">What We Do</Link>
+                <Link to="/who-we-are">Who We Are</Link>
               </li>
               <li>
-                <Link to="/about">Who We Are</Link>
+                <Link to="/what-we-do">What We Do</Link>
               </li>
               <li>
-                <Link to="/privacy">Privacy Policy</Link>
+                <Link to="/what-we-do#scholarships">Scholarships</Link>
+              </li>
+              <li>
+                <Link to="/what-we-do#grants">Teacher Grants</Link>
+              </li>
+              <li>
+                <Link to="/what-we-do#nonprofits">Nonprofit Assistance</Link>
               </li>
             </ul>
           </div>
@@ -35,13 +43,10 @@ const Footer = () => (
                 <Link to="/">Apply Now</Link>
               </li>
               <li>
-                <Link to="/programs#scholarships">Scholarships</Link>
+                <Link to="/scholarship-agota">Agota Bardos Scholarship</Link>
               </li>
               <li>
-                <Link to="/programs#grants">Teacher Grants</Link>
-              </li>
-              <li>
-                <Link to="/programs#nonprofits">Nonprofit Assistance</Link>
+                <Link to="/scholarship-denes">Denes Bardos Scholarship</Link>
               </li>
             </ul>
           </div>
@@ -56,6 +61,9 @@ const Footer = () => (
               </li>
               <li>
                 <Link to="/">Records Request</Link>
+              </li>
+              <li>
+                <Link to="/privacy">Privacy Policy</Link>
               </li>
             </ul>
           </div>
