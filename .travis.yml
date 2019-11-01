@@ -8,3 +8,5 @@ script:
   - lhci autorun --rc-file=./lighthouserc.json
 addons:
   chrome: stable
+notifications:
+  email: false
