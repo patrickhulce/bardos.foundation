@@ -43,7 +43,7 @@ const Footer = () => (
                 <a
                   target="_blank"
                   rel="noopener"
-                  href="https://docs.google.com/forms/d/1KI_mEhc9HifSRaXUX6J_he5Klk0YHvFeYO99qlZnd8s/edit"
+                  href="https://docs.google.com/forms/d/1KI_mEhc9HifSRaXUX6J_he5Klk0YHvFeYO99qlZnd8s/viewform"
                 >
                   Apply Now
                 </a>
@@ -72,7 +72,7 @@ const Footer = () => (
                 <a
                   target="_blank"
                   rel="noopener"
-                  href="https://docs.google.com/forms/d/1JXLY2vCcuXZP6u6FrIzarUl-rvHAUk-1JBTSDxDbsJo/edit"
+                  href="https://docs.google.com/forms/d/1JXLY2vCcuXZP6u6FrIzarUl-rvHAUk-1JBTSDxDbsJo/viewform"
                 >
                   Records Request
                 </a>

@@ -20,7 +20,7 @@ const Header = () => (
           <a
             target="_blank"
             rel="noopener"
-            href="https://docs.google.com/forms/d/1KI_mEhc9HifSRaXUX6J_he5Klk0YHvFeYO99qlZnd8s/edit"
+            href="https://docs.google.com/forms/d/1KI_mEhc9HifSRaXUX6J_he5Klk0YHvFeYO99qlZnd8s/viewform"
             className="bg-blue-700 hover:text-blue-300 text-white font-bold py-2 px-4 mr-2 rounded cursor-pointer"
             style={{height: 'max-content'}}
           >
