@@ -40,9 +40,13 @@ const Footer = () => (
             <h3 className="text-2xl mb-2">Programs</h3>
             <ul>
               <li>
-                <Link to="https://docs.google.com/forms/d/1KI_mEhc9HifSRaXUX6J_he5Klk0YHvFeYO99qlZnd8s/edit">
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href="https://docs.google.com/forms/d/1KI_mEhc9HifSRaXUX6J_he5Klk0YHvFeYO99qlZnd8s/edit"
+                >
                   Apply Now
-                </Link>
+                </a>
               </li>
               <li>
                 <Link to="/scholarship-agota">Agota Bardos Scholarship</Link>
@@ -56,14 +60,22 @@ const Footer = () => (
             <h3 className="text-2xl mb-2">Compliance</h3>
             <ul>
               <li>
-                <Link to="https://drive.google.com/file/d/19YynyPuuP4TW2C-jcldpT_4JQQCMs0Kr/view?usp=sharing">
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href="https://drive.google.com/file/d/19YynyPuuP4TW2C-jcldpT_4JQQCMs0Kr/view?usp=sharing"
+                >
                   501(c)(3) Exemption
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="https://docs.google.com/forms/d/1JXLY2vCcuXZP6u6FrIzarUl-rvHAUk-1JBTSDxDbsJo/edit">
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href="https://docs.google.com/forms/d/1JXLY2vCcuXZP6u6FrIzarUl-rvHAUk-1JBTSDxDbsJo/edit"
+                >
                   Records Request
-                </Link>
+                </a>
               </li>
               <li>
                 <Link to="/privacy">Privacy Policy</Link>
