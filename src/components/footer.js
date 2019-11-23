@@ -40,7 +40,9 @@ const Footer = () => (
             <h3 className="text-2xl mb-2">Programs</h3>
             <ul>
               <li>
-                <Link to="/">Apply Now</Link>
+                <Link to="https://docs.google.com/forms/d/1KI_mEhc9HifSRaXUX6J_he5Klk0YHvFeYO99qlZnd8s/edit">
+                  Apply Now
+                </Link>
               </li>
               <li>
                 <Link to="/scholarship-agota">Agota Bardos Scholarship</Link>
@@ -54,13 +56,14 @@ const Footer = () => (
             <h3 className="text-2xl mb-2">Compliance</h3>
             <ul>
               <li>
-                <Link to="/">501(c)(3) Exemption</Link>
+                <Link to="https://drive.google.com/file/d/19YynyPuuP4TW2C-jcldpT_4JQQCMs0Kr/view?usp=sharing">
+                  501(c)(3) Exemption
+                </Link>
               </li>
               <li>
-                <Link to="/">Texas Exemption</Link>
-              </li>
-              <li>
-                <Link to="/">Records Request</Link>
+                <Link to="https://docs.google.com/forms/d/1JXLY2vCcuXZP6u6FrIzarUl-rvHAUk-1JBTSDxDbsJo/edit">
+                  Records Request
+                </Link>
               </li>
               <li>
                 <Link to="/privacy">Privacy Policy</Link>

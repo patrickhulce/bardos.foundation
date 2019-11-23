@@ -58,7 +58,7 @@ const DenesPage = ({data}) => (
             </ul>
 
             <Link
-              to="/apply"
+              to="https://docs.google.com/forms/d/1KI_mEhc9HifSRaXUX6J_he5Klk0YHvFeYO99qlZnd8s/edit"
               className="bg-blue-700 hover:text-blue-300 text-white font-bold py-2 px-4 mt-6 ml-2 rounded cursor-pointer"
               style={{width: 'fit-content'}}
             >

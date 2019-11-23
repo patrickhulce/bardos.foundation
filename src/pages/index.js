@@ -48,7 +48,7 @@ const IndexPage = ({data}) => (
         </div>
       </div>
       <div className="flex flex-row text-center">
-        <Link className="w-1/2" to="/programs#scholarships">
+        <Link className="w-1/2" to="/what-we-do/#scholarships">
           <div className="h-64 relative">
             <Img
               className="w-full h-full object-cover z-background"
@@ -60,7 +60,7 @@ const IndexPage = ({data}) => (
             </div>
           </div>
         </Link>
-        <Link className="w-1/2" to="/programs#grants">
+        <Link className="w-1/2" to="/what-we-do/#grants">
           <div className="h-64 relative">
             <Img
               className="w-full h-full object-cover z-background"
