@@ -117,8 +117,15 @@ const ProgramsPage = ({data}) => (
           <h2 className="text-4xl mb-2">Teacher Grants</h2>
           <p>
             The Bardos Foundation directly supports teachers in schools with high immigrant
-            populations. Teachers can apply for grants for ordinary classroom supplies and community
-            projects.
+            populations. Teachers can{' '}
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://docs.google.com/forms/d/1KI_mEhc9HifSRaXUX6J_he5Klk0YHvFeYO99qlZnd8s/viewform"
+            >
+              apply
+            </a>{' '}
+            for grants for ordinary classroom supplies and community projects.
           </p>
         </>
       }

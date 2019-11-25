@@ -63,7 +63,7 @@ const Footer = () => (
                 <a
                   target="_blank"
                   rel="noopener"
-                  href="https://drive.google.com/file/d/19YynyPuuP4TW2C-jcldpT_4JQQCMs0Kr/view?usp=sharing"
+                  href="https://comptroller.texas.gov/taxes/exempt/verification-letter.php?id=32072175964"
                 >
                   501(c)(3) Exemption
                 </a>
