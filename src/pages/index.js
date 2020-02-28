@@ -90,8 +90,8 @@ const IndexPage = ({data}) => (
           <>
             <ImageCard
               image={data.studentBooks.childImageSharp.fluid}
-              title="Grants"
-              text="The Bardos Foundation awards two annual named grants: the Denes I. Bardos and Agota M. Bardos Awards."
+              title="Student Awards"
+              text="The Bardos Foundation awards two annual named grants to students: the Denes I. Bardos and Agota M. Bardos awards."
             />
             <ImageCard
               image={data.classroom.childImageSharp.fluid}
