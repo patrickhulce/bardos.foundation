@@ -26,7 +26,7 @@ const Footer = () => (
                 <Link to="/what-we-do">What We Do</Link>
               </li>
               <li>
-                <Link to="/what-we-do#scholarships">Scholarships</Link>
+                <Link to="/what-we-do#named-awards">Named Awards</Link>
               </li>
               <li>
                 <Link to="/what-we-do#grants">Teacher Grants</Link>
@@ -49,10 +49,10 @@ const Footer = () => (
                 </a>
               </li>
               <li>
-                <Link to="/scholarship-agota">Agota Bardos Scholarship</Link>
+                <Link to="/agota-award">Agota Bardos Award</Link>
               </li>
               <li>
-                <Link to="/scholarship-denes">Denes Bardos Scholarship</Link>
+                <Link to="/denes-award">Denes Bardos Award</Link>
               </li>
             </ul>
           </div>

@@ -25,19 +25,20 @@ export const query = graphql`
 
 const DenesPage = ({data}) => (
   <Layout>
-    <SEO title="Denes I. Bardos Scholarship" />
+    <SEO title="Denes I. Bardos Award" />
     <ParallaxImage height={300} />
-    <PageHeader text="Denes I. Bardos Scholarship" />
+    <PageHeader text="Denes I. Bardos Award" />
     <HeaderBottomBorder />
     <PageSection
       left={
         <>
-          <h2 className="text-4xl mb-2">Denes I. Bardos Scholarship</h2>
+          <h2 className="text-4xl mb-2">Denes I. Bardos Award</h2>
           <p>
-            The Denes I. Bardos Scholarship is awarded to students studying science or engineering.
-            Finalists embody the life and values of Denes Bardos by demonstrating their commitment
-            to innovation, academic achievement, and community or family service. As with all Bardos
-            Foundation grants, immigration history and financial need play a central role in awards.
+            The Denes I. Bardos Award is given to students for achievement in their community and
+            science or engineering. Finalists embody the life and values of Denes Bardos by
+            demonstrating their commitment to innovation, academic rigor, and community or family
+            service. As with all Bardos Foundation grants, immigration history and financial need
+            play a central role in awards.
           </p>
         </>
       }
@@ -50,10 +51,8 @@ const DenesPage = ({data}) => (
                 First or second generation immigrants currently residing in the United States.
               </li>
               <li>
-                Enrolled or enrolling in an undergraduate degree program within next 12 months.
-              </li>
-              <li>
-                Declared or intending to declare a major in the natural sciences or engineering.
+                Students graduating from high school within next 6 months or students enrolled in a
+                college degree program within the past 6 months.
               </li>
             </ul>
 

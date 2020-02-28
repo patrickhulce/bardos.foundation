@@ -48,7 +48,7 @@ const IndexPage = ({data}) => (
         </div>
       </div>
       <div className="flex flex-row text-center">
-        <Link className="w-1/2" to="/what-we-do/#scholarships">
+        <Link className="w-1/2" to="/what-we-do/#named-awards">
           <div className="h-64 relative">
             <Img
               className="w-full h-full object-cover z-background"
@@ -56,7 +56,7 @@ const IndexPage = ({data}) => (
             />
             <div className="absolute bg-green-700 opacity-75 inset-0"></div>
             <div className="absolute text-white text-shadow-subtle inset-0 flex flex-row items-center justify-center">
-              <h3 className="text-xl md:text-3xl">Student Scholarships</h3>
+              <h3 className="text-xl md:text-3xl">Student Grants</h3>
             </div>
           </div>
         </Link>
@@ -80,9 +80,9 @@ const IndexPage = ({data}) => (
             <p>
               The Bardos Foundation provides support to refugees, first-generation, and
               second-generation immigrants through educational grants and assistance to other
-              nonprofits with similar goals. This support includes the award of annual scholarships,
-              educational grants to teachers, donations to organizations such as the International
-              Rescue Committee, and direct services to other local nonprofits.
+              nonprofits with similar goals. This support includes the award of annual student
+              awards, educational grants to teachers, donations to organizations such as the
+              International Rescue Committee, and direct services to other local nonprofits.
             </p>
           </>
         }
@@ -90,8 +90,8 @@ const IndexPage = ({data}) => (
           <>
             <ImageCard
               image={data.studentBooks.childImageSharp.fluid}
-              title="Scholarships"
-              text="The Bardos Foundation awards two annual scholarships: the Denes I. Bardos and Agota M. Bardos Scholarships."
+              title="Grants"
+              text="The Bardos Foundation awards two annual named grants: the Denes I. Bardos and Agota M. Bardos Awards."
             />
             <ImageCard
               image={data.classroom.childImageSharp.fluid}

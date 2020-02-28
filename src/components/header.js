@@ -45,14 +45,14 @@ const Header = () => (
             What We Do
           </Link>
           <Link
-            to="/scholarship-agota"
+            to="/agota-award"
             className="px-2 border-r hover:text-green-300 truncate"
             style={{borderColor: 'rgba(255, 255, 255, 0.3)'}}
           >
-            Agota Scholarship
+            Agota Award
           </Link>
-          <Link to="/scholarship-denes" className="px-2 hover:text-green-300 truncate">
-            Denes Scholarship
+          <Link to="/denes-award" className="px-2 hover:text-green-300 truncate">
+            Denes Award
           </Link>
         </div>
       </div>

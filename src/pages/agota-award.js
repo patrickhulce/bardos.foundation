@@ -33,19 +33,20 @@ export const query = graphql`
 
 const AgotaPage = ({data}) => (
   <Layout>
-    <SEO title="Agota M. Bardos Scholarship" />
+    <SEO title="Agota M. Bardos Award" />
     <ParallaxImage height={300} />
-    <PageHeader text="Agota M. Bardos Scholarship" />
+    <PageHeader text="Agota M. Bardos Award" />
     <HeaderBottomBorder />
     <PageSection
       left={
         <>
-          <h2 className="text-4xl mb-2">Agota M. Bardos Scholarship</h2>
+          <h2 className="text-4xl mb-2">Agota M. Bardos Award</h2>
           <p>
-            The Agota M. Bardos Scholarship is awarded to students studying the arts. Finalists
-            embody the life and values of Agota Bardos by demonstrating their commitment to visual
-            arts or music, academic achievement, and community or family service. As with all Bardos
-            Foundation grants, immigration history and financial need play a central role in awards.
+            The Agota M. Bardos Award is given to students for achievement in their community and
+            the arts. Finalists embody the life and values of Agota Bardos by demonstrating their
+            commitment to visual arts or music, academic rigor, and community or family service. As
+            with all Bardos Foundation grants, immigration history and financial need play a central
+            role in awards.
           </p>
         </>
       }
@@ -58,9 +59,9 @@ const AgotaPage = ({data}) => (
                 First or second generation immigrants currently residing in the United States.
               </li>
               <li>
-                Enrolled or enrolling in an undergraduate degree program within next 12 months.
+                Students graduating from high school within next 6 months, or students enrolled in a
+                college degree program within the past 6 months.
               </li>
-              <li>Declared or intending to declare a major in the fine arts.</li>
             </ul>
 
             <a

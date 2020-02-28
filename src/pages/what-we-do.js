@@ -65,17 +65,16 @@ const ProgramsPage = ({data}) => (
     <PageHeader text="What We Do" />
     <HeaderBottomBorder />
     <PageSection
-      id="scholarships"
+      id="named-awards"
       left={
         <>
-          <h2 className="text-4xl mb-2">Scholarships</h2>
+          <h2 className="text-4xl mb-2">Named Awards</h2>
           <p>
-            The Bardos Foundation awards multiple scholarships annually to first-generation and
-            second-generation immigrants enrolling in a four-year degree program in the United
-            States. Winners demonstrate their academic achievement, financial need, and outstanding
-            community or family involvement. There are two named scholarships: the Agota M. Bardos
-            scholarship for the arts and the Denes I. Bardos scholarship for science and
-            engineering.
+            The Bardos Foundation awards multiple grants annually to first-generation and
+            second-generation immigrant students for their academic and community achievements.
+            Winners demonstrate their academic rigor, financial need, and outstanding community or
+            family involvement. There are two named awards: the Agota M. Bardos grant for the arts
+            and the Denes I. Bardos grant for science and engineering.
           </p>
         </>
       }
@@ -83,15 +82,15 @@ const ProgramsPage = ({data}) => (
         <>
           <ImageCard
             image={data.agotaPortait.childImageSharp.fluid}
-            title="Agota M. Bardos Scholarship"
-            text="The Agota M. Bardos scholarship is awarded to students intending to study the arts."
-            link="/scholarship-agota"
+            title="Agota M. Bardos Award"
+            text="The Agota M. Bardos grant is awarded to students for achievement in the arts."
+            link="/agota-award"
           />
           <ImageCard
             image={data.denesPortrait.childImageSharp.fluid}
-            title="Denes I. Bardos Scholarship"
-            text="The Denes I. Bardos scholarship is awarded to students intending to study engineering or the natural sciences."
-            link="/scholarship-denes"
+            title="Denes I. Bardos Award"
+            text="The Denes I. Bardos grant is awarded to students for achievement in engineering or the natural sciences."
+            link="/denes-award"
           />
         </>
       }
@@ -108,7 +107,7 @@ const ProgramsPage = ({data}) => (
           <ImageCard
             image={data.community.childImageSharp.fluid}
             title="Community Involvement"
-            text="Use grant funds to sponsor community projects and getting your students active!"
+            text="Use grant funds to sponsor special projects and getting your students active!"
           />
         </>
       }
@@ -116,7 +115,7 @@ const ProgramsPage = ({data}) => (
         <>
           <h2 className="text-4xl mb-2">Teacher Grants</h2>
           <p>
-            The Bardos Foundation directly supports teachers in schools with high immigrant
+            The Bardos Foundation directly supports teachers at schools with high immigrant
             populations. Teachers can{' '}
             <a
               target="_blank"
