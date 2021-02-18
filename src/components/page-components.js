@@ -2,7 +2,7 @@ import React from 'react'
 import Img from 'gatsby-image'
 
 export const ParallaxImage = ({className, height}) => {
-  const classes = `${className} w-screen object-cover`
+  const classes = `${className} w-full object-cover`
 
   return (
     <div className="relative">
@@ -30,7 +30,7 @@ export const PageHeader = ({text}) => {
   )
 }
 
-export const HeaderBottomBorder = () => <div className="h-2 w-screen bg-green-700"></div>
+export const HeaderBottomBorder = () => <div className="h-2 w-full bg-green-700"></div>
 
 export const PageSection = ({id, left, right}) => {
   return (
