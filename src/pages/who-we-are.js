@@ -127,8 +127,8 @@ const WhoWeArePage = ({data}) => (
         their souls.
       </p>
       <p className="mb-2">
-        It would be a treacherous 200 km journey through a tumultuous Hungary throw into revolution
-        culminating in the infamous iron curtain separately freedom from oppression, an expanse of
+        It would be a treacherous 200 km journey through a tumultuous Hungary thrown into revolution
+        culminating in the infamous iron curtain separating freedom from oppression, an expanse of
         barbed wire fencing, landmines, watchtowers, and armed guards with attack dogs. These
         courageous teenagers knew that if they were caught trying to escape, their chances of
         survival were very slim to none.
@@ -160,7 +160,7 @@ const WhoWeArePage = ({data}) => (
         <p className="mb-2">
           Refugee camps were set up in Austria, where Denes and Agi married. They decided to come to
           America where they and over a thousand other Hungarian refugees pulled into the New York
-          harbor aboard a Navy transport shirt on Valentine's Day, 1957. Not a dry eye was on the
+          harbor aboard a Navy transport ship on Valentine's Day, 1957. Not a dry eye was on the
           ship when they caught sight of the Statue of Liberty. <b>Liberty</b> at last.
         </p>
         <p className="mb-2">
