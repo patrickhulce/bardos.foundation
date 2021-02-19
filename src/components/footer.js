@@ -63,7 +63,8 @@ const Footer = () => (
                 <a
                   target="_blank"
                   rel="noopener"
-                  href="https://comptroller.texas.gov/taxes/exempt/verification-letter.php?id=32072175964"
+                  href="https://apps.irs.gov/app/eos/detailsPage?ein=843198514&name=Bardos%20Foundation&city=Irving&state=TX&countryAbbr=US&dba=&type=CHARITIES,%20DETERMINATIONLETTERS&orgTags=CHARITIES&orgTags=DETERMINATIONLETTERS"
+                  // href="https://comptroller.texas.gov/taxes/exempt/verification-letter.php?tp_id=32072175964"
                 >
                   501(c)(3) Exemption
                 </a>

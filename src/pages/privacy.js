@@ -4,13 +4,7 @@ import Img from 'gatsby-image'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import {
-  ParallaxImage,
-  PageHeader,
-  PageSection,
-  ImageCard,
-  HeaderBottomBorder,
-} from '../components/page-components'
+import {ParallaxImage, PageHeader, HeaderBottomBorder} from '../components/page-components'
 
 const SectionTitle = props => <div className="text-2xl">{props.children}.</div>
 const Paragraph = props => <div className="container md:mx-auto mx-4 my-4">{props.children}</div>
@@ -61,9 +55,10 @@ const PrivacyPage = ({data}) => (
       ways that require Bardos Foundation to gather personally-identifying information. The amount
       and type of information that Bardos Foundation gathers depends on the nature of the
       interaction. For example, we ask visitors who sign up for a commenter account at
-      https://www.bardos.foundation to provide an email address and password while applicants to a
-      grant program will be asked to provide first name, last name, geographic location, school
-      contact information, academic history, demographic information, and a personal statement.
+      https://www.bardos.foundation to provide an email address and password while applicants to an
+      award program will be asked to provide more identifying information such as first name, last
+      name, geographic location, school contact information, academic history, demographic
+      information, and a personal statement.
     </Paragraph>
     <Paragraph>
       <SectionTitle>Disclosure Of Data</SectionTitle>
@@ -113,7 +108,7 @@ const PrivacyPage = ({data}) => (
       Foundation's websites, with the drawback that certain features of Bardos Foundation's websites
       may not function properly without the aid of cookies. By continuing to navigate our website
       without changing your cookie settings, you hereby acknowledge and agree to Bardos Foundation's
-      use of cookies.{' '}
+      use of cookies.
     </Paragraph>
     <Paragraph>
       <SectionTitle>Children's Privacy</SectionTitle>
@@ -135,7 +130,8 @@ const PrivacyPage = ({data}) => (
     <Paragraph>
       <SectionTitle>Contact Information</SectionTitle>
       If you have any questions about this Privacy Policy, please contact us via email,
-      <a href="mailto:privacy@bardos.foundation"> privacy@bardos.foundation</a>.
+      <a href="mailto:privacy@bardos.foundation">privacy@bardos.foundation</a>, or postal mail at,
+      Bardos Foundation, 403 Rio Grande Dr, Irving, TX 75039.
     </Paragraph>
   </Layout>
 )

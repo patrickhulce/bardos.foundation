@@ -83,13 +83,13 @@ const ProgramsPage = ({data}) => (
           <ImageCard
             image={data.agotaPortait.childImageSharp.fluid}
             title="Agota M. Bardos Award"
-            text="The Agota M. Bardos grant is awarded to students for achievement in the arts."
+            text="The Agota M. Bardos grant is awarded to students in recognition for achievement in the arts."
             link="/agota-award"
           />
           <ImageCard
             image={data.denesPortrait.childImageSharp.fluid}
             title="Denes I. Bardos Award"
-            text="The Denes I. Bardos grant is awarded to students for achievement in engineering or the natural sciences."
+            text="The Denes I. Bardos grant is awarded to students in recognition for achievement in engineering or the natural sciences."
             link="/denes-award"
           />
         </>

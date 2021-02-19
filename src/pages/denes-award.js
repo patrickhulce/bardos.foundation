@@ -34,11 +34,11 @@ const DenesPage = ({data}) => (
         <>
           <h2 className="text-4xl mb-2">Denes I. Bardos Award</h2>
           <p>
-            The Denes I. Bardos Award is given to students for achievement in their community and
-            science or engineering. Finalists embody the life and values of Denes Bardos by
-            demonstrating their commitment to innovation, academic rigor, and community or family
-            service. As with all Bardos Foundation grants, immigration history and financial need
-            play a central role in awards.
+            The Denes I. Bardos Award is given to students in recognition for achievement in their
+            community and science or engineering. Finalists embody the life and values of Denes
+            Bardos by demonstrating their commitment to innovation, academic rigor, and community or
+            family service. As with all Bardos Foundation grants, immigration history and financial
+            need play a central role in awards.
           </p>
         </>
       }
@@ -51,8 +51,8 @@ const DenesPage = ({data}) => (
                 First or second generation immigrants currently residing in the United States.
               </li>
               <li>
-                Students graduating from high school within next 6 months or students enrolled in a
-                college degree program within the past 6 months.
+                Students in their final year of high school or students enrolled in a college degree
+                program within the past 6 months.
               </li>
             </ul>
 
