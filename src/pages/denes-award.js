@@ -9,6 +9,7 @@ import {
   PageHeader,
   PageSection,
   HeaderBottomBorder,
+  AwardDetails,
 } from '../components/page-components'
 
 export const query = graphql`
@@ -92,6 +93,7 @@ const DenesPage = ({data}) => (
         </>
       }
     />
+    <AwardDetails />
   </Layout>
 )
 

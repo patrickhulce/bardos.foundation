@@ -44,6 +44,60 @@ export const PageSection = ({id, left, right}) => {
   )
 }
 
+export const AwardDetails = () => {
+  return (
+    <PageSection
+      left={
+        <>
+          <h2 className="text-4xl mb-2">Selection Process</h2>
+          <ul className="list-disc pl-10 mt-2">
+            <li>Feb 1: Applications open</li>
+            <li>May 1: Applications close</li>
+            <li>May 15: Finalists notified</li>
+            <li>June 1: Finalist response deadline</li>
+            <li>June 15: Winners announced</li>
+          </ul>
+          <h2 className="text-4xl mt-4 mb-2">Selection Criteria</h2>
+          <p>
+            The Foundation does not and shall not discriminate on the basis of race, color,
+            religion, gender, gender expression, age, disability, marital status, sexual
+            orientation, or military status, in any of its grant decisions or operations. The
+            Foundation considers a multitude of factors when making awards including GPA, ACT/SAT
+            test scores, family financial situation, community/extracurricular involement,
+            candidate's personal statement, and academic course load.
+          </p>
+        </>
+      }
+      right={
+        <>
+          <div className="flex flex-col justify-center">
+            <h2 className="text-4xl mb-2">Student Award Details</h2>
+            <ul className="list-disc pl-10 mt-2">
+              <li>$1000 one-time payment</li>
+              <li>4 total winners per application cycle</li>
+              <li>
+                Awards are issued in recognition of past achievements and not restricted to finance
+                any particular activities (award winners may use the funds in any manner which they
+                see fit).
+              </li>
+            </ul>
+
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://docs.google.com/forms/d/1KI_mEhc9HifSRaXUX6J_he5Klk0YHvFeYO99qlZnd8s/viewform"
+              className="bg-blue-700 hover:text-blue-300 text-white font-bold py-2 px-4 mt-6 ml-2 rounded cursor-pointer"
+              style={{width: 'fit-content'}}
+            >
+              Apply Now
+            </a>
+          </div>
+        </>
+      }
+    />
+  )
+}
+
 export const ImageCard = ({image, title, text, link}) => {
   const imageClasses = `w-24 h-24 object-cover rounded flex-shrink-0 flex-grow-0`
 

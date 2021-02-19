@@ -9,6 +9,7 @@ import {
   PageHeader,
   PageSection,
   ImageCard,
+  AwardDetails,
   HeaderBottomBorder,
 } from '../components/page-components'
 
@@ -101,6 +102,7 @@ const AgotaPage = ({data}) => (
         </>
       }
     />
+    <AwardDetails />
   </Layout>
 )
 
