@@ -151,7 +151,7 @@ const ProgramsPage = ({data}) => (
           <ImageCard
             image={data.photography.childImageSharp.fluid}
             title="Photography"
-            text="Pro bono photography services are available to elligible nonprofits in certain markets to capture their work and promote their cause."
+            text="Pro bono photography services are available to eligible nonprofits in certain markets to capture their work and promote their cause."
           />
         </>
       }

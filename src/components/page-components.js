@@ -110,9 +110,7 @@ export const ImageCard = ({image, title, text, link}) => {
       )}
       <div className="ml-4">
         <h3 className="text-xl">{link ? <a href={link}>{title}</a> : title}</h3>
-        <p className="text-sm overflow-hidden" style={{maxHeight: '4rem'}}>
-          {text}
-        </p>
+        <p className="text-sm overflow-hidden">{text}</p>
       </div>
     </div>
   )
