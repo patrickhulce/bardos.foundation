@@ -56,12 +56,10 @@ const AgotaPage = ({data}) => (
           <div className="flex flex-col justify-center">
             <h2 className="text-4xl mb-2">Eligibility</h2>
             <ul className="list-disc pl-10 mt-2">
+              <li>Immigrants currently residing in the United States.</li>
               <li>
-                First or second generation immigrants currently residing in the United States.
-              </li>
-              <li>
-                Students in their final year of high school or students enrolled in an undergraduate or graduate degree
-                program within the past 6 months.
+                Students in their final year of high school or students enrolled in an undergraduate
+                degree program within the past 6 months.
               </li>
             </ul>
 

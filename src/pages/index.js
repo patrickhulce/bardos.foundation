@@ -78,11 +78,11 @@ const IndexPage = ({data}) => (
           <>
             <h2 className="text-4xl mb-2">What We Do</h2>
             <p>
-              The Bardos Foundation provides support to refugees, first-generation, and
-              second-generation immigrants through educational grants and assistance to other
-              nonprofits with similar goals. This support includes the award of annual student
-              awards, educational grants to teachers, donations to organizations such as the
-              International Rescue Committee, and direct services to other local nonprofits.
+              The Bardos Foundation provides support to refugees and first-generation immigrants
+              through educational grants and assistance to other nonprofits with similar goals. This
+              support includes the award of annual student awards, educational grants to teachers,
+              donations to organizations such as the International Rescue Committee, and direct
+              services to other local nonprofits.
             </p>
           </>
         }
