@@ -86,7 +86,7 @@ const DenesPage = ({data}) => (
             career in orthopedic implant research. As a Knight of the Order of Malta and a Knight of
             the Holy Sepulcher, he often cooks for the homeless and would give you the shirt off his
             back without a second thought. A gifted storyteller, Denes continues to share his
-            harrowing and heartfelt experiences with his 31 grandchildren and 4 great-grandchildren.
+            harrowing and heartfelt experiences with his 31 grandchildren and 8 great-grandchildren.
           </p>
         </>
       }
