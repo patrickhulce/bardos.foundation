@@ -55,6 +55,13 @@ export const query = graphql`
         }
       }
     }
+    hungaryFlag: file(relativePath: {eq: "hungary-flag.jpg"}) {
+      childImageSharp {
+        fluid(maxWidth: 100, maxHeight: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `
 
@@ -91,6 +98,12 @@ const ProgramsPage = ({data}) => (
             title="Denes I. Bardos Award"
             text="The Denes I. Bardos grant is awarded to students in recognition for achievement in engineering or the natural sciences."
             link="/denes-award"
+          />
+          <ImageCard
+            image={data.hungaryFlag.childImageSharp.fluid}
+            title="Hungarian Spirit Award"
+            text="The Hungarian Spirit Award is awarded to students in recognition for achievement in the face of adversity."
+            link="/hungarian-spirit-award"
           />
         </>
       }
