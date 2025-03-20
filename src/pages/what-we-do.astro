@@ -1,0 +1,108 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ParallaxImage from '../components/ParallaxImage.astro';
+import PageHeader from '../components/PageHeader.astro';
+import PageSection from '../components/PageComponents.astro';
+import HeaderBottomBorder from '../components/HeaderBottomBorder.astro';
+import ImageCard from '../components/ImageCard.astro';
+
+const agotaPortrait = '/images/agota-portrait.jpg';
+const denesPortrait = '/images/denes-portrait.jpg';
+const hungaryFlag = '/images/hungary-flag.jpg';
+const schoolSupplies = '/images/school-supplies.jpg';
+const community = '/images/community.jpg';
+const donations = '/images/donations.jpg';
+const photography = '/images/photography.jpg';
+---
+
+<Layout title="What We Do">
+  <ParallaxImage height="300px" />
+  <PageHeader text="What We Do" />
+  <HeaderBottomBorder />
+
+  <PageSection id="named-awards">
+    <div slot="left">
+      <h2 class="text-4xl mb-2">Named Awards</h2>
+      <p>
+        The Bardos Foundation awards multiple grants annually to first-generation and
+        second-generation immigrant students for their academic and community achievements.
+        Winners demonstrate their academic rigor, financial need, and outstanding community or
+        family involvement. There are two named awards: the Agota M. Bardos grant for the arts
+        and the Denes I. Bardos grant for science and engineering.
+      </p>
+    </div>
+    <div slot="right">
+      <ImageCard
+        image={agotaPortrait}
+        title="Agota M. Bardos Award"
+        text="The Agota M. Bardos grant is awarded to students in recognition for achievement in the arts."
+        link="/agota-award"
+      />
+      <ImageCard
+        image={denesPortrait}
+        title="Denes I. Bardos Award"
+        text="The Denes I. Bardos grant is awarded to students in recognition for achievement in engineering or the natural sciences."
+        link="/denes-award"
+      />
+      <ImageCard
+        image={hungaryFlag}
+        title="Hungarian Spirit Award"
+        text="The Hungarian Spirit Award is awarded to students in recognition for achievement in the face of adversity."
+        link="/hungarian-spirit-award"
+      />
+    </div>
+  </PageSection>
+
+  <PageSection id="grants">
+    <div slot="left">
+      <ImageCard
+        image={schoolSupplies}
+        title="Classroom Supplies"
+        text="Use a grant from the Bardos Foundation to fund classroom supplies for your students."
+      />
+      <ImageCard
+        image={community}
+        title="Community Involvement"
+        text="Use grant funds to sponsor special projects and getting your students active!"
+      />
+    </div>
+    <div slot="right">
+      <h2 class="text-4xl mb-2">Teacher Grants</h2>
+      <p>
+        The Bardos Foundation directly supports teachers at schools with high immigrant
+        populations. Teachers can
+        <a
+          target="_blank"
+          rel="noopener"
+          href="https://docs.google.com/forms/d/1KI_mEhc9HifSRaXUX6J_he5Klk0YHvFeYO99qlZnd8s/viewform"
+        >
+          apply
+        </a>
+        for grants for ordinary classroom supplies and community projects.
+      </p>
+    </div>
+  </PageSection>
+
+  <PageSection id="nonprofits">
+    <div slot="left">
+      <h2 class="text-4xl mb-2">Nonprofit Assistance</h2>
+      <p>
+        Our resources alone are not enough, so we work with other nonprofits to aid in our
+        shared mission. The Bardos Foundation provides direct donations and services in our
+        members area of expertise to other nonprofits.
+      </p>
+    </div>
+    <div slot="right">
+      <ImageCard
+        image={donations}
+        title="Donations"
+        text="The Bardos Foundation donates to organizations with similar goals."
+      />
+      <ImageCard
+        image={photography}
+        title="Photography"
+        text="Pro bono photography services are available to eligible nonprofits in certain markets to capture their work and promote their cause."
+      />
+    </div>
+  </PageSection>
+</Layout>

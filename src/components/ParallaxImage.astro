@@ -1,0 +1,50 @@
+---
+export interface Props {
+  height: string;
+  className?: string;
+}
+
+const { height, className = "" } = Astro.props;
+const classes = `${className} w-full object-cover`;
+---
+
+<div class="relative">
+  <div id="parallax-bg" class="absolute inset-0 z-1"></div>
+  <picture class={`${classes} z-background`} style={`height: ${height};`}>
+    <source
+      class={classes}
+      srcset="/images/liberty-portrait.jpg"
+      media="(max-width: 600px)"
+      style={`height: ${height};`}
+    />
+    <img class={classes} src="/images/liberty.jpg" style={`height: ${height};`} />
+  </picture>
+</div>
+
+<style>
+  #parallax-bg {
+    background-image: url('/images/liberty.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+  }
+
+  @media (max-width: 700px) {
+    #parallax-bg {
+      background-image: url('/images/liberty-portrait.jpg');
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener(
+    'scroll',
+    () => {
+      const element = document.getElementById('parallax-bg');
+      if (!element) return;
+      element.style.backgroundPositionY = `-${(3 * window.pageYOffset) / 4}px`;
+    },
+    { passive: true }
+  );
+</script>

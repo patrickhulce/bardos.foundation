@@ -1,0 +1,68 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ParallaxImage from '../components/ParallaxImage.astro';
+import PageHeader from '../components/PageHeader.astro';
+import PageSection from '../components/PageComponents.astro';
+import AwardDetails from '../components/AwardDetails.astro';
+import HeaderBottomBorder from '../components/HeaderBottomBorder.astro';
+---
+
+<Layout title="Denes I. Bardos Award">
+  <ParallaxImage height="300px" />
+  <PageHeader text="Denes I. Bardos Award" />
+  <HeaderBottomBorder />
+  <PageSection>
+    <div slot="left">
+      <h2 class="text-4xl mb-2">Denes I. Bardos Award</h2>
+      <p>
+        The Denes I. Bardos Award is given to students in recognition for achievement in their
+        community and science or engineering. Finalists embody the life and values of Denes
+        Bardos by demonstrating their commitment to innovation, academic rigor, and community or
+        family service. As with all Bardos Foundation grants, immigration history and financial
+        need play a central role in awards.
+      </p>
+    </div>
+    <div slot="right">
+      <div class="flex flex-col justify-center">
+        <h2 class="text-4xl mb-2">Eligibility</h2>
+        <ul class="list-disc pl-10 mt-2">
+          <li>Immigrants currently residing in the United States.</li>
+          <li>
+            Students in their final year of high school or students enrolled in an undergraduate
+            degree program within the past 6 months.
+          </li>
+        </ul>
+
+        <a
+          target="_blank"
+          rel="noopener"
+          href="https://docs.google.com/forms/d/1KI_mEhc9HifSRaXUX6J_he5Klk0YHvFeYO99qlZnd8s/viewform"
+          class="bg-blue-700 hover:text-blue-300 text-white font-bold py-2 px-4 mt-6 ml-2 rounded cursor-pointer"
+          style="width: fit-content;"
+        >
+          Apply Now
+        </a>
+      </div>
+    </div>
+  </PageSection>
+  <PageSection>
+    <div slot="left">
+      <div class="flex justify-center">
+        <img class="w-64 rounded-full" src="/images/denes-portrait.jpg" alt="Denes Bardos" />
+      </div>
+    </div>
+    <div slot="right">
+      <h2 class="text-4xl mb-2">About Denes Bardos</h2>
+      <p>
+        Denes Bardos is man of brilliance and curiousity. Generous, funny, dutiful, empirical,
+        and rebellious, he has lived through the worst of situations, survived, and come out
+        beaming. A lifelong learner, Denes earned his PhD in metallurgy and had a successful
+        career in orthopedic implant research. As a Knight of the Order of Malta and a Knight of
+        the Holy Sepulcher, he often cooks for the homeless and would give you the shirt off his
+        back without a second thought. A gifted storyteller, Denes continues to share his
+        harrowing and heartfelt experiences with his 31 grandchildren and 8 great-grandchildren.
+      </p>
+    </div>
+  </PageSection>
+  <AwardDetails />
+</Layout>

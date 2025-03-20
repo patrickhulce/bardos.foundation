@@ -1,0 +1,93 @@
+---
+import Logo from './Logo.astro';
+---
+
+<footer class="relative">
+  <div class="relative bg-green-700 text-white w-full" style="margin-top: 50px;">
+    <div class="container mx-auto">
+      <div class="flex flex-col sm:flex-row pb-12">
+        <div
+          class="relative bg-green-900 rounded-lg p-4 m-2"
+          style="top: -30px; max-height: 300px;"
+        >
+          <a href="/">
+            <Logo />
+          </a>
+        </div>
+        <div class="my-8 ml-4 md:ml-16 flex-grow">
+          <h3 class="text-2xl mb-2">About Us</h3>
+          <ul>
+            <li>
+              <a href="/who-we-are">Who We Are</a>
+            </li>
+            <li>
+              <a href="/what-we-do">What We Do</a>
+            </li>
+            <li>
+              <a href="/what-we-do#named-awards">Named Awards</a>
+            </li>
+            <li>
+              <a href="/what-we-do#grants">Teacher Grants</a>
+            </li>
+            <li>
+              <a href="/what-we-do#nonprofits">Nonprofit Assistance</a>
+            </li>
+          </ul>
+        </div>
+        <div class="my-8 ml-4 flex-grow">
+          <h3 class="text-2xl mb-2">Programs</h3>
+          <ul>
+            <li>
+              <a
+                target="_blank"
+                rel="noopener"
+                href="https://docs.google.com/forms/d/1KI_mEhc9HifSRaXUX6J_he5Klk0YHvFeYO99qlZnd8s/viewform"
+              >
+                Apply Now
+              </a>
+            </li>
+            <li>
+              <a href="/agota-award">Agota Bardos Award</a>
+            </li>
+            <li>
+              <a href="/denes-award">Denes Bardos Award</a>
+            </li>
+            <li>
+              <a href="/hungarian-spirit-award">Hungarian Spirit Award</a>
+            </li>
+          </ul>
+        </div>
+        <div class="my-8 ml-4 flex-grow">
+          <h3 class="text-2xl mb-2">Compliance</h3>
+          <ul>
+            <li>
+              <a
+                target="_blank"
+                rel="noopener"
+                href="https://apps.irs.gov/app/eos/detailsPage?ein=843198514&name=Bardos%20Foundation&city=Irving&state=TX&countryAbbr=US&dba=&type=CHARITIES,%20DETERMINATIONLETTERS&orgTags=CHARITIES&orgTags=DETERMINATIONLETTERS"
+              >
+                501(c)(3) Exemption
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                rel="noopener"
+                href="https://docs.google.com/forms/d/1JXLY2vCcuXZP6u6FrIzarUl-rvHAUk-1JBTSDxDbsJo/viewform"
+              >
+                Records Request
+              </a>
+            </li>
+            <li>
+              <a href="/privacy">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mx-auto flex flex-row items-center my-4 px-2">
+    <span style="flex-grow: 1;">© {new Date().getFullYear()} Bardos Foundation</span>
+    <span>All rights reserved.</span>
+  </div>
+</footer>

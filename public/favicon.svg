@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 36 36">
+  <path fill="#2f855a" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+  <path fill="white" d="M18 5 a 13 13 0 0 1 0 26 a 13 13 0 0 1 0 -26" />
+  <text x="18" y="22" text-anchor="middle" font-size="14" font-family="Montserrat, sans-serif" font-weight="bold" fill="#2f855a">B</text>
+</svg>

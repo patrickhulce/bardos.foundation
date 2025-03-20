@@ -1,0 +1,21 @@
+---
+export interface Props {
+  id?: string;
+  left?: any;
+  right?: any;
+}
+
+const { id } = Astro.props;
+---
+
+<div
+  id={id}
+  class="container mx-auto sm:py-24 py-12 flex flex-col sm:flex-row items-center"
+>
+  <div class="sm:w-1/2 px-4 lg:px-8 mb-8">
+    <slot name="left" />
+  </div>
+  <div class="sm:w-1/2 px-4 lg:px-8">
+    <slot name="right" />
+  </div>
+</div>

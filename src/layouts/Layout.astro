@@ -1,0 +1,80 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+	title: string;
+	belowHeader?: boolean;
+}
+
+const { title, belowHeader = false } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title} | Bardos Foundation</title>
+		<meta name="description" content="The Bardos Foundation's mission is to aid and support refugees and immigrants" />
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet" />
+	</head>
+	<body>
+		<Header />
+		<main class={belowHeader ? 'below-header' : ''}>
+			<slot />
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style is:global>
+	html {
+		margin: 0;
+		font-family: sans-serif;
+		-ms-text-size-adjust: 100%;
+		-webkit-text-size-adjust: 100%;
+	}
+
+	body {
+		background: #eee;
+		margin: 0;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+	* {
+		box-sizing: border-box;
+	}
+
+	.font-montserrat {
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	.below-header {
+		margin-top: 100px;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5 {
+		font-family: 'Montserrat', sans-serif;
+		margin: 0;
+	}
+
+	.shadow-subtle {
+		box-shadow: 0 0 76px rgba(0, 0, 0, 0.2);
+	}
+
+	.text-shadow-subtle {
+		text-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+	}
+
+	.z-background {
+		z-index: -1;
+	}
+</style>
