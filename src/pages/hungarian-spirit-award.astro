@@ -5,18 +5,19 @@ import PageHeader from '../components/PageHeader.astro';
 import PageSection from '../components/PageComponents.astro';
 import AwardDetails from '../components/AwardDetails.astro';
 import HeaderBottomBorder from '../components/HeaderBottomBorder.astro';
+
+const namesake = 'Laszlo Herczku';
 ---
 
 <Layout title="Hungarian Spirit Award">
   <ParallaxImage height="300px" />
-  <PageHeader text="Hungarian Spirit Award" />
+  <PageHeader text={`${namesake} Hungarian Spirit Award`} />
   <HeaderBottomBorder />
   <PageSection>
     <div slot="left">
-      <h2 class="text-4xl mb-2">Hungarian Spirit Award</h2>
+      <h2 class="text-4xl mb-2">{namesake} Hungarian Spirit Award</h2>
       <p>
-        The Hungarian Spirit Award is given to students in recognition for achievement in the face of adversity.
-        Each year, the named honoree is rotated among great Hungarian immigrants submitted by the community.
+        The {namesake} Hungarian Spirit Award is given to students in recognition for achievement in the face of adversity.
         Finalists embody the life and values of Hungarian refugees by demonstrating their commitment
         to community or family service. As with all Bardos Foundation grants,
         immigration history and financial need play a central role in awards.
@@ -52,9 +53,9 @@ import HeaderBottomBorder from '../components/HeaderBottomBorder.astro';
       </div>
     </div>
     <div slot="right">
-      <h2 class="text-4xl mb-2">About Laszlo Herczku</h2>
+      <h2 class="text-4xl mb-2">About {namesake}</h2>
       <p>
-        This year's Hungarian Spirit Award honoree is <a class="underline text-blue-700" href="https://www.newbaker.com/obituaries/Laszlo-Herczku?obId=37787284" target="_blank" rel="noopener">Laszlo Herczku</a>.
+        This year's Hungarian Spirit Award is named in memory of <a class="underline text-blue-700" href="https://www.newbaker.com/obituaries/Laszlo-Herczku?obId=37787284" target="_blank" rel="noopener">Laszlo Herczku</a>.
         Laszlo was a resilient soul whose life journey spanned continents.
         Born in Budapest and trained as a shoemaker, he escaped revolutionary turmoil to embrace freedom in the US.
         A proud Army veteran and devoted General Motors employee, Laszlo built a life defined by
