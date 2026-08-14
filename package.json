@@ -8,12 +8,14 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "verify": "npm run build && node scripts/verify-migration.mjs",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.5.3",
+    "@astrojs/sitemap": "^3.7.3",
     "@astrojs/tailwind": "^5.1.0",
+    "astro": "^5.5.3",
     "tailwindcss": "^3.4.1"
   }
 }

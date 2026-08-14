@@ -8,6 +8,8 @@ interface Props {
 }
 
 const { title, belowHeader = false } = Astro.props;
+const description = "The Bardos Foundation's mission is to aid and support refugees and immigrants";
+const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? Astro.url);
 ---
 
 <!doctype html>
@@ -18,7 +20,14 @@ const { title, belowHeader = false } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title} | Bardos Foundation</title>
-		<meta name="description" content="The Bardos Foundation's mission is to aid and support refugees and immigrants" />
+		<meta name="description" content={description} />
+		<link rel="canonical" href={canonicalURL} />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Bardos Foundation" />
+		<meta property="og:title" content={`${title} | Bardos Foundation`} />
+		<meta property="og:description" content={description} />
+		<meta property="og:url" content={canonicalURL} />
+		<meta name="twitter:card" content="summary" />
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet" />
 	</head>
 	<body>

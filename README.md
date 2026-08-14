@@ -1,48 +1,46 @@
-# Astro Starter Kit: Basics
+# Bardos Foundation
+
+Website for the [Bardos Foundation](https://bardosfoundation.org), a nonprofit that supports refugees and first-generation immigrants through educational grants and assistance.
+
+## Development
+
+This is a static [Astro](https://astro.build) site deployed with Vercel.
 
 ```sh
-npm create astro@latest -- --template basics
+npm install
+npm run dev
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+The local development server runs at `http://localhost:4321`.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Validation
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+Run the production build and domain-migration checks before deploying:
 
-## 🚀 Project Structure
+```sh
+npm run verify
+```
 
-Inside of your Astro project, you'll see the following folders and files:
+The verification checks generated HTML, `robots.txt`, and the sitemap for canonical `bardosfoundation.org` URLs and rejects references to the retired `bardos.foundation` domain.
+
+## Domain migration
+
+The canonical site is `https://bardosfoundation.org`. Hosting configuration must permanently redirect requests while preserving paths and query strings:
 
 ```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+https://bardos.foundation/*       -> https://bardosfoundation.org/*
+https://www.bardos.foundation/*   -> https://bardosfoundation.org/*
+https://www.bardosfoundation.org/* -> https://bardosfoundation.org/*
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+DNS, certificates, host-based redirects, and email aliases are managed outside this repository in Cloudflare, Vercel, and Google Workspace.
 
-## 🧞 Commands
+## Repository
 
-All commands are run from the root of the project, from a terminal:
+[github.com/patrickhulce/bardos.foundation](https://github.com/patrickhulce/bardos.foundation)
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+After the GitHub repository is renamed to `bardosfoundation.org`, update existing local clones:
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+```sh
+git remote set-url origin git@github.com:patrickhulce/bardosfoundation.org.git
+```
